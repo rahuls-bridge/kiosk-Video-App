@@ -50,7 +50,7 @@ wss.broadcast = function (data, exclude) {
     if (client.readyState === client.OPEN) client.send(data);
     else console.error('Error: the client state is ' + client.readyState);
   }
-};*/
+};
 
 {
   mandatory: {
@@ -64,4 +64,4 @@ wss.broadcast = function (data, exclude) {
     { width: { max: 800 }},
     { facingMode: "user" }
   ]
-}
+}*/
