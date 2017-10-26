@@ -53,9 +53,9 @@ wss.broadcast = function (data, exclude) {
 
 {
   mandatory: {
-    width: { min: 640 },
+    width: { min: 640 }
     height: { min: 480 }
-  },
+  }
   optional: [
     { width: 650 },
     { width: { min: 650 }},
