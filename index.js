@@ -28,7 +28,7 @@ console.log("The HTTPS server is up and running");
 // create the WebSocket server
 wss = new WebSocketServer({server: sslSrv});  
 console.log("WebSocket Secure server is up and running.");
-
+console.log(wss)
 /** successful connection */
 wss.on('connection', function (client) {
   console.log("A new WebSocket client was connected.");
