@@ -29,12 +29,12 @@ console.log("The HTTPS server is up and running");
 wss = new WebSocketServer({server: sslSrv});  
 console.log("WebSocket Secure server is up and running.");
 console.log(wss)
-/** successful connection */
+/** successful connection 
 wss.on('connection', function (client) {
   console.log("A new WebSocket client was connected.");
-  /** incomming message */
+ 
   client.on('message', function (message) {
-    /** broadcast message to all clients */
+    
     wss.broadcast(message, client);
   });
 });
@@ -50,7 +50,7 @@ wss.broadcast = function (data, exclude) {
     if (client.readyState === client.OPEN) client.send(data);
     else console.error('Error: the client state is ' + client.readyState);
   }
-};
+};*/
 
 {
   mandatory: {
